@@ -16,7 +16,7 @@ export function Footer() {
           <div className="lg:col-span-1">
             <Link href="/" className="inline-block">
                {/* Using logo.svg as confirmed in plan */}
-               <Image src="/logo.svg" alt={COMPANY.name} width={150} height={40} className="h-10 w-auto" />
+               <Image src="/logo-footer.png" alt={COMPANY.name} width={150} height={40} className="h-10 w-auto" />
             </Link>
             <p className="mt-6 text-sm leading-relaxed text-slate-400">
               {COMPANY.about}
