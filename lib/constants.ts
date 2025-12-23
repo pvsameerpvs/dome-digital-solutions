@@ -3,7 +3,7 @@ export const COMPANY = {
   tagline: "AV Solutions | IT Products & Support | Security Systems | Network Security",
   website: "www.domedigitalsolutions.com",
   email: "info@domedigitalsolutions.com",
-  phones: ["+971 52 615 0054", "+971 55 577 5806", "+971 4 450 2795"],
+  phones: ["+971 5 251 86 499", "+971 4 450 2795"],
   about:
     "Dome Digital Solutions is a professional value-added system integrator specializing in Audio-Visual, IT & Security products. The company focuses on delivering reliable, cost-effective, and high-quality technology solutions through strong global vendor partnerships.",
   mission:
