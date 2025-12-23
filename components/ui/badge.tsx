@@ -8,6 +8,7 @@ const badgeVariants = cva("inline-flex items-center rounded-full border px-3 py-
       default: "border-slate-200 bg-slate-50 text-slate-800",
       brand: "border-brand-200 bg-brand-50 text-brand-800",
       dark: "border-slate-800 bg-slate-950 text-slate-100",
+      outline: "text-slate-900 border-slate-200",
     },
   },
   defaultVariants: { variant: "default" },
