@@ -7,10 +7,30 @@ import { COMPANY } from "@/lib/constants";
 import Image from "next/image";
 
 const pillars = [
-  { icon: ShieldCheck, title: "Security Systems", desc: "Access control, barriers, attendance & visitor management." },
-  { icon: MonitorPlay, title: "AV Solutions", desc: "Displays, LED walls, conferencing, smart classrooms & signage." },
-  { icon: Headphones, title: "IT Products & Support", desc: "Enterprise devices, peripherals, and responsive support." },
-  { icon: Network, title: "Network Security", desc: "Structured cabling, switching, Wi‑Fi, VPN, and proxy services." },
+  { 
+    icon: ShieldCheck, 
+    title: "Security Systems", 
+    desc: "Access control, barriers, attendance & visitor management.",
+    image: "/images/SecuritySystems.png"
+  },
+  { 
+    icon: MonitorPlay, 
+    title: "AV Solutions", 
+    desc: "Displays, LED walls, conferencing, smart classrooms & signage.",
+    image: "/images/AV-Solutions.png"
+  },
+  { 
+    icon: Headphones, 
+    title: "IT Products & Support", 
+    desc: "Enterprise devices, peripherals, and responsive support.",
+    image: "/images/IT Products & Support.png"
+  },
+  { 
+    icon: Network, 
+    title: "Network Security", 
+    desc: "Structured cabling, switching, Wi‑Fi, VPN, and proxy services.",
+    image: "/images/NetworkSecurity.png"
+  },
 ];
 
 export function HeroSection() {
@@ -25,7 +45,6 @@ export function HeroSection() {
           className="object-cover object-center opacity-40"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/70 to-slate-950/30" />
       </div>
 
       <SiteContainer className="relative z-10 flex h-full min-h-[90vh] flex-col justify-center py-20">
@@ -39,7 +58,7 @@ export function HeroSection() {
               <h1 className="text-5xl font-bold leading-tight tracking-tight text-white sm:text-6xl lg:text-7xl">
                 Transform Your <span className="text-brand-400">Workspace</span>
               </h1>
-              <p className="mt-6 text-lg leading-relaxed text-slate-300 sm:text-xl max-w-2xl mx-auto lg:mx-0">
+              <p className="mt-6 text-lg leading-relaxed text-white font-bold sm:text-xl max-w-2xl mx-auto lg:mx-0">
                 {COMPANY.tagline} {COMPANY.about}
               </p>
 
@@ -62,14 +81,30 @@ export function HeroSection() {
               {pillars.map((p, i) => (
                 <div
                   key={p.title}
-                  className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:bg-white/10 hover:border-brand-400/30 hover:shadow-xl hover:shadow-brand-500/10"
+                  className="group relative h-[240px] overflow-hidden rounded-2xl border border-white/10 bg-slate-950/50 p-6 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-brand-400/30 hover:shadow-xl hover:shadow-brand-500/10"
                   style={{ animationDelay: `${i * 100}ms` }}
                 >
-                  <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand-500/20 text-brand-300 group-hover:bg-brand-500 group-hover:text-white transition-colors duration-300">
-                    <p.icon className="h-6 w-6" />
+                  {/* Card Background Image */}
+                  <Image
+                    src={p.image}
+                    alt={p.title}
+                    fill
+                    className="object-cover opacity-40 transition-opacity duration-500 group-hover:opacity-50"
+                  />
+                  {/* Default Gradient Overlay - Always visible for text contrast */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-transparent opacity-100" />
+                  
+                  {/* Hover Content Overlay - Subtle darkening/lightening on interaction */}
+                  <div className="absolute inset-0 bg-white/5 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+
+                  {/* Content */}
+                  <div className="relative z-10 flex h-full flex-col">
+                    <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand-500/20 text-brand-300 transition-colors duration-300 group-hover:bg-brand-500 group-hover:text-white">
+                      <p.icon className="h-6 w-6" />
+                    </div>
+                    <h3 className="mb-2 text-lg font-semibold text-white">{p.title}</h3>
+                    <p className="text-sm leading-relaxed text-slate-400 transition-colors group-hover:text-slate-200">{p.desc}</p>
                   </div>
-                  <h3 className="mb-2 text-lg font-semibold text-white">{p.title}</h3>
-                  <p className="text-sm leading-relaxed text-slate-400 group-hover:text-slate-300">{p.desc}</p>
                   
                   {/* Decorative gradient blob */}
                   <div className="absolute -right-12 -top-12 h-24 w-24 rounded-full bg-brand-500/20 blur-2xl transition-all group-hover:bg-brand-500/30" />
@@ -81,8 +116,15 @@ export function HeroSection() {
             <div className="mt-8 rounded-xl border border-white/5 bg-slate-950/50 p-6 backdrop-blur-sm lg:absolute lg:-bottom-12 lg:right-0 lg:w-[120%] lg:max-w-md xl:-right-12">
                <div className="flex items-center gap-4">
                   <div className="flex -space-x-3">
-                     {[1,2,3].map((_, i) => (
-                       <div key={i} className="h-10 w-10 rounded-full border-2 border-slate-900 bg-slate-800" />
+                     {["/microsoft.png", "/samsung.png", "/logitech.png"].map((logo, i) => (
+                       <div key={i} className="relative h-10 w-10 overflow-hidden rounded-full border-2 border-slate-900 bg-white">
+                         <Image
+                           src={logo}
+                           alt="Partner Logo"
+                           fill
+                           className="object-contain p-1.5"
+                         />
+                       </div>
                      ))}
                   </div>
                   <div>

@@ -28,7 +28,6 @@ export default function Page() {
         {/* Background elements */}
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-[url('/images/hero-bg.png')] bg-cover bg-center opacity-20 mix-blend-overlay" />
-          <div className="absolute inset-0 bg-gradient-to-b from-slate-900/0 via-slate-900/80 to-slate-900" />
         </div>
 
         <SiteContainer className="relative z-10 text-center">

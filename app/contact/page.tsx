@@ -63,7 +63,6 @@ export default function Page() {
       <section className="relative overflow-hidden bg-slate-900 pt-24 pb-32">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-[url('/images/services_support.png')] bg-cover bg-center opacity-10 mix-blend-overlay" />
-          <div className="absolute inset-0 bg-gradient-to-b from-slate-900/10 via-slate-900/90 to-slate-900" />
         </div>
 
         <SiteContainer className="relative z-10 text-center">
