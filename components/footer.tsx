@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { SiteContainer } from "@/components/site-container";
 import { COMPANY } from "@/lib/constants";
-import { Linkedin, Facebook, Twitter, Instagram, Mail, Phone, MapPin } from "lucide-react";
+import { Linkedin, Facebook, Instagram, Mail, Phone, MapPin } from "lucide-react";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -22,11 +22,9 @@ export function Footer() {
               {COMPANY.about}
             </p>
             <div className="mt-6 flex gap-4">
-               {/* Placeholder Social Links */}
-               <SocialLink href="#" icon={Linkedin} label="LinkedIn" />
-               <SocialLink href="#" icon={Facebook} label="Facebook" />
-               <SocialLink href="#" icon={Twitter} label="Twitter" />
-               <SocialLink href="#" icon={Instagram} label="Instagram" />
+               <SocialLink href="https://www.linkedin.com/company/dome-digital-solutions/" icon={Linkedin} label="LinkedIn" />
+               <SocialLink href="https://www.facebook.com/DomeDigitalSolutions/" icon={Facebook} label="Facebook" />
+               <SocialLink href="https://www.instagram.com/dome_digital_solutions/" icon={Instagram} label="Instagram" />
             </div>
           </div>
 
@@ -58,7 +56,8 @@ export function Footer() {
             <ul className="mt-4 space-y-4 text-sm">
               <li className="flex items-start gap-3">
                  <MapPin className="h-5 w-5 shrink-0 text-brand-500" />
-                 <span>Deira, Dubai, UAE</span>
+                 <span>Office 310, Al Kazim Building 3,<br></br>
+Hor Al Anz East, Dubai - UAE</span>
               </li>
               <li className="flex items-start gap-3">
                  <Phone className="h-5 w-5 shrink-0 text-brand-500" />

@@ -97,8 +97,8 @@ export default function Page() {
                         <p className="mt-1 text-sm leading-relaxed text-slate-600 dark:text-slate-400">
                            {/* Placeholder Address since it's not in constants, using generic Dubai one or derived from knowledge if available. 
                                I will use a generic descriptive placeholder for now. */}
-                           Office 123, Tech Plaza<br />
-                           Business Bay, Dubai, UAE
+                           Office 310, Al Kazim Building 3,<br /> 
+                           Hor Al Anz East, Dubai - UAE
                         </p>
                      </div>
                   </div>
@@ -149,7 +149,7 @@ export default function Page() {
                        <div>
                           <h3 className="font-semibold text-slate-900 dark:text-white">Business Hours</h3>
                           <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">Monday - Saturday</p>
-                          <p className="text-sm font-medium text-slate-900 dark:text-slate-200">8:00 AM - 6:00 PM</p>
+                          <p className="text-sm font-medium text-slate-900 dark:text-slate-200">8:30 AM - 6:30 PM</p>
                           <p className="mt-2 text-xs text-slate-500">Sunday: Closed</p>
                        </div>
                     </div>
@@ -222,30 +222,18 @@ export default function Page() {
       {/* Map Section */}
       <section className="bg-slate-50 py-16 dark:bg-slate-950">
          <SiteContainer>
-            <div className="overflow-hidden rounded-3xl border border-slate-200 bg-slate-200 dark:border-slate-800 dark:bg-slate-800">
-               {/* 
-                  Map Placeholder:
-                   Ideally this should be an iframe. Since I don't have the exact coordinates in the prompt 
-                  (only "UAE" general context from constants), I will use a placeholder visual 
-                  that looks like a map or just a styled box.
-               */}
-               <div className="relative h-[400px] w-full bg-slate-300 dark:bg-slate-800">
-                  <div className="absolute inset-0 flex items-center justify-center bg-[url('/images/map_pattern.png')] bg-cover opacity-50 mix-blend-multiply dark:opacity-20" />
-                  <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center">
-                     <MapPin className="h-12 w-12 text-brand-600 drop-shadow-lg" />
-                     <h3 className="mt-4 text-2xl font-bold text-slate-900 dark:text-white">Our Location</h3>
-                     <p className="mt-2 text-lg text-slate-700 dark:text-slate-300">
-                        {/* Reusing placeholder address */}
-                        Business Bay, Dubai, United Arab Emirates
-                     </p>
-                     <Button variant="outline" className="mt-6 bg-white shadow-sm hover:bg-slate-50 dark:bg-slate-900 dark:hover:bg-slate-800">
-                        <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer">
-                           Open in Google Maps
-                        </a>
-                     </Button>
-                  </div>
-               </div>
-            </div>
+             <div className="overflow-hidden rounded-3xl border border-slate-200 bg-slate-200 dark:border-slate-800 dark:bg-slate-800">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28866.29676276704!2d55.32221438624826!3d25.260925965713117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5debcbc5086d%3A0xe05c21ba5b5c0548!2sAl%20Kazim3%20Building!5e0!3m2!1sen!2sae!4v1766567496218!5m2!1sen!2sae" 
+                  width="600" 
+                  height="450" 
+                  style={{ border: 0 }} 
+                  allowFullScreen 
+                  loading="lazy" 
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="w-full h-[450px]"
+                ></iframe>
+             </div>
          </SiteContainer>
       </section>
 
