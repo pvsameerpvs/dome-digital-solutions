@@ -22,6 +22,7 @@ const nav = [
   { href: "/about", label: "About Us" },
   { href: "/solutions", label: "Solutions" },
   { href: "/services", label: "Services" },
+  { href: "/projects", label: "Projects" },
   { href: "/brands", label: "Brands / Partners" },
   { href: "/contact", label: "Contact Us" },
 ];

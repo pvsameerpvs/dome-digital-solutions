@@ -17,7 +17,7 @@ const icons = [Wrench, ClipboardCheck, LifeBuoy];
 const features = [
   ["System Design", "Installation", "Integration", "Testing & Commissioning"],
   ["Preventive Maintenance", "Emergency Support", "Spare Parts Management", "Performance Optimization"],
-  ["24/7 Support", "Remote Diagnostics", "On-site Repair", "Firmware Updates"]
+  ["Remote Diagnostics", "On-site Repair", "Firmware Updates"]
 ];
 
 export default function Page() {

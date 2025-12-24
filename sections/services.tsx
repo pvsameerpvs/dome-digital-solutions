@@ -66,7 +66,6 @@ export function ServicesSection() {
                 {/* Overlay Card */}
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-slate-900/90 to-transparent p-8 pt-24 text-white">
                    <div className="rounded-xl border border-white/20 bg-white/10 p-4 backdrop-blur-md">
-                      <p className="font-semibold text-white">24/7 Expert Support available</p>
                       <p className="text-sm text-slate-200 opacity-90">Get peace of mind with our dedicated AMC packages.</p>
                    </div>
                 </div>
