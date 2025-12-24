@@ -1,6 +1,6 @@
 export const COMPANY = {
   name: "Dome Digital Solutions",
-  tagline: "AV Solutions | IT Products & Support | Security Systems | Network Security",
+  tagline: "AV Solutions | IT Products & Support | Security Systems | Network Security |",
   website: "www.domedigitalsolutions.com",
   email: "info@domedigitalsolutions.com",
   phones: ["+971 5 251 86 499", "+971 4 450 2795"],

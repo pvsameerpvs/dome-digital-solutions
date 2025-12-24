@@ -3,6 +3,7 @@ import { AboutSection } from "@/sections/about";
 import { SolutionsSection } from "@/sections/solutions";
 import { ServicesSection } from "@/sections/services";
 import { ProjectsSection } from "@/sections/projects";
+import { ProjectGallery } from "@/sections/project-gallery";
 import { BrandsSection } from "@/sections/brands";
 import { ContactSection } from "@/sections/contact";
 
@@ -14,6 +15,7 @@ export default function HomePage() {
       <SolutionsSection />
       <ServicesSection />
       <ProjectsSection limit={3} />
+      <ProjectGallery />
       <BrandsSection />
       {/* <ContactSection /> */}
     </>
