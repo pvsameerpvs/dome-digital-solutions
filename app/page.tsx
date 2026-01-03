@@ -7,6 +7,7 @@ import { ProjectsSection } from "@/sections/projects";
 import { ProjectGallery } from "@/sections/project-gallery";
 import { BrandsSection } from "@/sections/brands";
 import { ContactSection } from "@/sections/contact";
+import { DomLogisticsSection } from "@/sections/dom-logistics";
 
 export default function HomePage() {
   return (
@@ -19,6 +20,7 @@ export default function HomePage() {
       <ProjectsSection limit={3} />
       <ProjectGallery />
       <BrandsSection />
+      <DomLogisticsSection />
       {/* <ContactSection /> */}
     </>
   );
