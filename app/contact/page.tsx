@@ -62,7 +62,7 @@ export default function Page() {
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-slate-900 pt-24 pb-32">
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-[url('/images/services_support.png')] bg-cover bg-center opacity-10 mix-blend-overlay" />
+          <div className="absolute inset-0 bg-[url('/images/services_support.png')] bg-cover bg-center opacity-40 " />
         </div>
 
         <SiteContainer className="relative z-10 text-center">

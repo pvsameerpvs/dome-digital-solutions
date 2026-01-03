@@ -49,20 +49,8 @@ export const PROJECTS_DATA: Project[] = [
     year: 2019,
     client: "MINISTRY OF EDUCATION",
   },
-  {
-    id: 7,
-    company: "KHANSAHEB MEP",
-    project: "MEP WORK",
-    year: 2020,
-    client: "PALACE MAJD AL FUTTAIM",
-  },
-  {
-    id: 8,
-    company: "GECO ELECTRO-MECHANICAL L.L.C",
-    project: "MEP WORK",
-    year: 2021,
-    client: "NEST STUDENT ACCOMMODATION",
-  },
+  
+ 
   {
     id: 9,
     company: "ALMOE DIGITAL SOLUTIONS L.L.C",
@@ -70,13 +58,7 @@ export const PROJECTS_DATA: Project[] = [
     year: 2022,
     client: "MINISTRY OF EDUCATION",
   },
-  {
-    id: 10,
-    company: "PROJECTION HOUSE L.L.C",
-    project: "MEP WORK",
-    year: 2022,
-    client: "BRIGHTON COLLEGE ABUDHABI",
-  },
+  
   {
     id: 11,
     company: "VOLTAS-SIX CONSTRUCT JOINT VENTURE",
@@ -168,20 +150,8 @@ export const PROJECTS_DATA: Project[] = [
     year: 2024,
     client: "SHARJAH AIRPORT",
   },
-  {
-    id: 24,
-    company: "AL SHIRAWI ELECTRICAL & MECHANICAL ENG.CO",
-    project: "MEP WORK",
-    year: 2024,
-    client: "INNOVATION HUB",
-  },
-  {
-    id: 25,
-    company: "CHINA RAILWAY 18TH BUREAU GROUP LLC",
-    project: "MEP WORK",
-    year: 2024,
-    client: "LIME GARDEN DUBAI HILS",
-  },
+ 
+ 
   {
     id: 26,
     company: "ALMOE DIGITAL SOLUTIONS L.L.C",

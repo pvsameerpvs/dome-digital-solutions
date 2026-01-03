@@ -27,7 +27,7 @@ export default function Page() {
       <section className="relative overflow-hidden bg-slate-900 pt-24 pb-32">
         {/* Background elements */}
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-[url('/images/services_support.png')] bg-cover bg-center opacity-10 mix-blend-overlay" />
+          <div className="absolute inset-0 bg-[url('/images/services_support.png')] bg-cover bg-center opacity-40" />
         </div>
 
         <SiteContainer className="relative z-10 text-center">
@@ -150,7 +150,7 @@ export default function Page() {
              
              {/* Abstract Visual Side */}
              <div className="relative h-[400px] overflow-hidden rounded-3xl bg-slate-900">
-                <div className="absolute inset-0 bg-[url('/images/services_support.png')] bg-cover bg-center opacity-40 mix-blend-luminosity" />
+                <div className="absolute inset-0 bg-[url('/images/services_support.png')] bg-cover bg-center  mix-blend-luminosity" />
                 <div className="absolute inset-0 bg-gradient-to-tr from-brand-600/80 to-transparent mix-blend-multiply" />
                 <div className="absolute inset-0 flex items-center justify-center p-8 text-center">
                    <div className="backdrop-blur-sm bg-white/10 p-6 rounded-2xl border border-white/20">

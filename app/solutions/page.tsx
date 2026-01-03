@@ -27,7 +27,7 @@ export default function Page() {
       <section className="relative overflow-hidden bg-slate-900 pt-24 pb-32">
         {/* Background elements */}
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-[url('/images/hero-bg.png')] bg-cover bg-center opacity-20 mix-blend-overlay" />
+          <div className="absolute inset-0 bg-[url('/images/hero-bg.png')] bg-cover bg-center opacity-40" />
         </div>
 
         <SiteContainer className="relative z-10 text-center">
@@ -54,7 +54,7 @@ export default function Page() {
               return (
                 <div
                   key={group.title}
-                  className="group relative overflow-hidden rounded-3xl border border-white/10 bg-slate-900 shadow-2xl transition-all duration-500 hover:-translate-y-1 hover:shadow-brand-500/10 flex flex-col"
+                  className="group relative overflow-hidden rounded-3xl border border-white/10  shadow-2xl transition-all duration-500 hover:-translate-y-1 hover:shadow-brand-500/10 flex flex-col"
                 >
                   {/* Background Image Area */}
                   <div className="relative h-64 w-full overflow-hidden">
@@ -64,7 +64,7 @@ export default function Page() {
                        fill
                        className="object-cover transition-transform duration-700 group-hover:scale-105"
                      />
-                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/60 to-transparent" />
+                     <div className="absolute inset-0  from-slate-900 via-slate-900/60 to-transparent" />
                      
                      <div className="absolute bottom-6 left-8 flex items-center gap-4">
                         <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white/10 text-white backdrop-blur-md ring-1 ring-white/20 transition-colors group-hover:bg-brand-500 group-hover:text-white group-hover:ring-brand-500">
