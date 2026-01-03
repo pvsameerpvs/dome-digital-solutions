@@ -276,7 +276,7 @@ export const PROJECTS_DATA: Project[] = [
   {
     id: 39,
     company: "ALMOE DIGITAL SOLUTIONS L.L.C",
-    project: "AV SYSTEM",
+    project: "BGM SYSTEM",
     year: 2025,
     client: "BURJUMAN CENTRE",
   },

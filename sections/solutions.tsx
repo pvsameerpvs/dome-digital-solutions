@@ -18,7 +18,7 @@ const icons = [Shield, Monitor, Laptop, Router];
 
 export function SolutionsSection() {
   return (
-    <section className="bg-slate-900 py-24" id="solutions">
+    <section className=" py-24" id="solutions">
       <SiteContainer>
         <div className="mb-16 md:mb-20">
            <SectionHeading
