@@ -20,7 +20,7 @@ export default function HomePage() {
       <ProjectsSection limit={3} />
       <ProjectGallery />
       <BrandsSection />
-      <DomLogisticsSection />
+      {/* <DomLogisticsSection /> */}
       {/* <ContactSection /> */}
     </>
   );

@@ -10,7 +10,7 @@ export function Footer() {
   return (
     <footer className="border-t border-slate-800 bg-slate-950 text-slate-300">
       <SiteContainer className="py-16">
-        <div className="grid gap-12 lg:grid-cols-6">
+        <div className="grid gap-12 lg:grid-cols-5">
           
           {/* Brand Column */}
           <div className="lg:col-span-1">
@@ -50,6 +50,41 @@ export function Footer() {
             </ul>
           </div>
 
+          
+          
+         
+
+          {/* Contact Info */}
+          <div>
+            <h3 className="text-sm font-semibold text-white">Dome Digital Solutions</h3>
+            <ul className="mt-4 space-y-4 text-sm">
+              <li className="flex items-start gap-3">
+                 <MapPin className="h-5 w-5 shrink-0 text-brand-500" />
+                 <span>
+                  <span className="block font-medium text-white mb-1">Dubai Office</span>
+                 <span>Office 310, Al Kazim Building 3,<br></br>
+                       Hor Al Anz East, Dubai - UAE</span>
+                 </span>
+              </li>
+              <li className="flex items-start gap-3">
+                 <Phone className="h-5 w-5 shrink-0 text-brand-500" />
+                 <div className="space-y-1">
+                    {COMPANY.phones.map(phone => (
+                       <a key={phone} href={`tel:${phone.replace(/\s/g, '')}`} className="block hover:text-brand-400 transition-colors">
+                          {phone}
+                       </a>
+                    ))}
+                 </div>
+              </li>
+              <li className="flex items-start gap-3">
+                 <Mail className="h-5 w-5 shrink-0 text-brand-500" />
+                 <a href={`mailto:${COMPANY.email}`} className="hover:text-brand-400 transition-colors">
+                    {COMPANY.email}
+                 </a>
+              </li>
+            </ul>
+          </div>
+
           {/* Dom Logistics */}
           <div>
              <h3 className="text-sm font-semibold text-white">Dom Logistics</h3>
@@ -69,61 +104,13 @@ export function Footer() {
                       +91 94969 29991
                    </a>
                 </li>
-             </ul>
-          </div>
-          
-           {/* Juan Component */}
-          <div>
-            <h3 className="text-sm font-semibold text-white">Juan Build Tech</h3>
-             <ul className="mt-4 space-y-4 text-sm">
-                <li className="flex items-start gap-3">
-                   <MapPin className="h-5 w-5 shrink-0 text-brand-500" />
-                   <span>
-                      <span className="block font-medium text-white mb-1">Technical Services LLC</span>
-                      Office 310, Al Kazim Building 3,<br></br>
-                      Hor Al Anz East, Dubai - UAE
-                   </span>
-                </li>
-                <li className="flex items-start gap-3">
-                   <Phone className="h-5 w-5 shrink-0 text-brand-500" />
-                   <div className="space-y-1">
-                      <a href="tel:+971525186499" className="block hover:text-brand-400 transition-colors">
-                        +971 52 518 6499
-                      </a>
-                      <a href="tel:+97144502795" className="block hover:text-brand-400 transition-colors">
-                        +971 4 450 2795
-                      </a>
-                   </div>
-                </li>
-             </ul>
-          </div>
-
-          {/* Contact Info */}
-          <div>
-            <h3 className="text-sm font-semibold text-white">Dome Digital Solutions</h3>
-            <ul className="mt-4 space-y-4 text-sm">
-              <li className="flex items-start gap-3">
-                 <MapPin className="h-5 w-5 shrink-0 text-brand-500" />
-                 <span>Office 310, Al Kazim Building 3,<br></br>
-Hor Al Anz East, Dubai - UAE</span>
-              </li>
-              <li className="flex items-start gap-3">
-                 <Phone className="h-5 w-5 shrink-0 text-brand-500" />
-                 <div className="space-y-1">
-                    {COMPANY.phones.map(phone => (
-                       <a key={phone} href={`tel:${phone.replace(/\s/g, '')}`} className="block hover:text-brand-400 transition-colors">
-                          {phone}
-                       </a>
-                    ))}
-                 </div>
-              </li>
-              <li className="flex items-start gap-3">
+                 <li className="flex items-start gap-3">
                  <Mail className="h-5 w-5 shrink-0 text-brand-500" />
-                 <a href={`mailto:${COMPANY.email}`} className="hover:text-brand-400 transition-colors">
-                    {COMPANY.email}
+                 <a  className="hover:text-brand-400 transition-colors">
+                    info@dom-logistics.com
                  </a>
               </li>
-            </ul>
+             </ul>
           </div>
         </div>
 
