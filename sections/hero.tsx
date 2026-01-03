@@ -81,7 +81,7 @@ export function HeroSection() {
               {pillars.map((p, i) => (
                 <div
                   key={p.title}
-                  className="group relative h-[240px] overflow-hidden rounded-2xl border border-white/10 bg-slate-950/50 p-6 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-brand-400/30 hover:shadow-xl hover:shadow-brand-500/10"
+                  className="group relative h-[240px] overflow-hidden rounded-2xl border border-white/10 bg-slate-950/50 p-6 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-brand-400/30 hover:shadow-xl hover:shadow-brand-500/10 "
                   style={{ animationDelay: `${i * 100}ms` }}
                 >
                   {/* Card Background Image */}
@@ -89,25 +89,23 @@ export function HeroSection() {
                     src={p.image}
                     alt={p.title}
                     fill
-                    className="object-cover opacity-40 transition-opacity duration-500 group-hover:opacity-50"
+                    className="object-cover transition-opacity duration-500"
                   />
-                  {/* Default Gradient Overlay - Always visible for text contrast */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-transparent opacity-100" />
                   
-                  {/* Hover Content Overlay - Subtle darkening/lightening on interaction */}
-                  <div className="absolute inset-0 bg-white/5 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                 
+                  {/* <div className="absolute inset-0 bg-slate-950/20 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 
-                  {/* Content */}
+                 
                   <div className="relative z-10 flex h-full flex-col">
                     <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand-500/20 text-brand-300 transition-colors duration-300 group-hover:bg-brand-500 group-hover:text-white">
                       <p.icon className="h-6 w-6" />
                     </div>
-                    <h3 className="mb-2 text-lg font-semibold text-white">{p.title}</h3>
-                    <p className="text-sm leading-relaxed text-slate-400 transition-colors group-hover:text-slate-200">{p.desc}</p>
+                    <h3 className="mb-2 text-lg font-semibold text-brand-400">{p.title}</h3>
+                    <p className="text-sm leading-relaxed text-brand-400 transition-colors group-hover:text-slate-200">{p.desc}</p>
                   </div>
                   
-                  {/* Decorative gradient blob */}
-                  <div className="absolute -right-12 -top-12 h-24 w-24 rounded-full bg-brand-500/20 blur-2xl transition-all group-hover:bg-brand-500/30" />
+                  
+                  <div className="absolute -right-12 -top-12 h-24 w-24 rounded-full bg-brand-500/20 blur-2xl transition-all group-hover:bg-brand-500/30" /> */}
                 </div>
               ))}
             </div>
@@ -117,7 +115,7 @@ export function HeroSection() {
                <div className="flex items-center gap-4">
                   <div className="flex -space-x-3">
                      {["/microsoft.png", "/samsung.png", "/logitech.png"].map((logo, i) => (
-                       <div key={i} className="relative h-10 w-10 overflow-hidden rounded-full border-2 border-slate-900 bg-white">
+                       <div key={i} className="relative h-10 w-10 overflow-hidden rounded-full border-2 border-slate-900 bg-white ">
                          <Image
                            src={logo}
                            alt="Partner Logo"
