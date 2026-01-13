@@ -6,7 +6,7 @@ import { SiteContainer } from "@/components/site-container";
 import { SectionHeading } from "@/components/section-heading";
 import { cn } from "@/lib/utils";
 
-const images = Array.from({ length: 11 }, (_, i) => `/images/projects/projects${i + 1}.jpeg`);
+const images = Array.from({ length: 12 }, (_, i) => `/images/projects/projects${i + 1}.jpeg`);
 
 export function ProjectGallery() {
   return (

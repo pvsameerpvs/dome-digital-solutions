@@ -53,7 +53,7 @@ export function HeroSection() {
           <div className="flex flex-col justify-center text-center lg:text-left">
             <div className="animate-in fade-in slide-in-from-bottom-5 duration-700">
               <Badge variant="dark" className="mb-6 w-fit rounded-full px-4 py-1 text-sm font-medium uppercase tracking-wider backdrop-blur-md">
-                Corporate IT & AV Solutions
+                Dome Group
               </Badge>
               <h1 className="text-5xl font-bold leading-tight tracking-tight text-white sm:text-6xl lg:text-7xl">
                 Transform Your <span className="text-brand-400">Workspace</span>
