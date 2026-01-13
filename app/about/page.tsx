@@ -12,9 +12,9 @@ export const metadata: Metadata = {
 };
 
 const stats = [
-  { label: "Years Experience", value: "10+", icon: Award },
-  { label: "Projects Completed", value: "500+", icon: Briefcase },
-  { label: "Happy Clients", value: "100+", icon: Users2 },
+  { label: "Years Experience", value: "12+", icon: Award },
+  { label: "Projects Completed", value: "516+", icon: Briefcase },
+  { label: "Happy Clients", value: "137+", icon: Users2 },
   { label: "Global Partners", value: "25+", icon: Building2 },
 ];
 
