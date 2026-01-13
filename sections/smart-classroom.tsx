@@ -3,6 +3,7 @@ import { SiteContainer } from "@/components/site-container";
 import { SectionHeading } from "@/components/section-heading";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
+import { StatsCounter } from "@/components/stats-counter";
 
 const uniqueFeatures = [
   {
@@ -83,6 +84,9 @@ export function SmartClassroomSection() {
                />
             </div>
           </div>
+        </div>
+        <div className="mt-16">
+          <StatsCounter />
         </div>
       </SiteContainer>
     </section>
